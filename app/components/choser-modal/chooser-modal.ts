@@ -16,15 +16,19 @@ export class ChooserComponent {
     screenHeight = screen.mainScreen.heightDIPs
     screenWidth = screen.mainScreen.widthDIPs;
     @Input() chooserItems = [];
+    @Input() isVisible;
     @Output() onSelectItem: EventEmitter<any> = new EventEmitter();
+    @Output() onCloseChooser: EventEmitter<any> = new EventEmitter();
     topForBottom = screen.mainScreen.heightDIPs - 69 - 100;
     iterableDiffer;
     constructor(private _iterableDiffers: IterableDiffers) {
         this.iterableDiffer = this._iterableDiffers.find([]).create(null);
         application.android.on(AndroidApplication.activityBackPressedEvent, (data: AndroidActivityBackPressedEventData) => {
-            console.log("CloseChooser")
-            data.cancel = true;
-            application.android.off(AndroidApplication.activityBackPressedEvent)
+            if (this.isVisible) {
+                data.cancel = true;
+            }
+            console.log(this.isVisible)
+            this.CloseChooser();
         });
     }
 
@@ -38,10 +42,11 @@ export class ChooserComponent {
 
     onItemTap(item) {
         this.onSelectItem.emit(item);
+        this.CloseChooser()
     }
 
     CloseChooser() {
-        console.log("CloseChooser")
+        this.onCloseChooser.emit();
     }
 
     onTap() {

@@ -21,19 +21,8 @@ export class ChooserService{
     }
 
     getChooserItems(intentList) {
-
-        // let gallery = new android.content.Intent(android.content.Intent.ACTION_PICK,
-        //     android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        // gallery.addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK);
-        // gallery.putExtra("return-data", true);
         let gallery = new android.content.Intent(android.content.Intent.ACTION_PICK);
         gallery.setType("image/*");
-        // gallery.putExtra("crop", "true");
-        // gallery.putExtra("scale", false);
-        // gallery.putExtra("outputX", 256);
-        // gallery.putExtra("outputY", 256);
-        // gallery.putExtra("aspectX", 1);
-        // gallery.putExtra("aspectY", 1);
         gallery.putExtra("return-data", true);
 
 
@@ -111,7 +100,7 @@ export class ChooserService{
                     resolve(imageSourceModule.fromNativeSource(uri).toBase64String("jpg"))
                     // console.log();
                     // console.log(imageSourceModule.fromFile(this._calculateFileUri(uri)).toBase64String("jpg"));
-
+                    application.android.off(application.AndroidApplication.activityResultEvent)
                     }
             }
         })

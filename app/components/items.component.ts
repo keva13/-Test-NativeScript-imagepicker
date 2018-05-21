@@ -37,6 +37,7 @@ export class ItemsComponent implements OnInit, AfterViewInit {
     }
 
     openChooser() {
+        this.chooserItems = [];
         this._chooserService.getChooserItems(this.chooserItems);
         this.showChooser = true;
     }
@@ -45,7 +46,11 @@ export class ItemsComponent implements OnInit, AfterViewInit {
         this._chooserService.getImageFromIntent(item, 500,500).then((data) => {
             this.viewModel.set("imageSource", 'data:image/jpeg;base64,' + data);
             this.userImage.nativeElement.src = 'data:image/jpeg;base64,' + data;
-            this.showChooser = false;
+            this.closeChooser();
         })
+    }
+
+    closeChooser() {
+        this.showChooser = false;
     }
 }
