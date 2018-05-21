@@ -1,4 +1,3 @@
-<!--<Image [src]="myImageSource.icon" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>-->
 <Image #userImage style="border-radius:100%" (tap)="openChooser()" [src]="imageSource" stretch="aspectFill" width="200" height="200"></Image>
-<app-chooser-modal [isVisible]="showChooser" [chooserItems]= chooserItems (onCloseChooser)="closeChooser()" (onSelectItem)="onSelectChooserItem($event)"></app-chooser-modal>
+<app-chooser-modal [isVisible]=showChooser [chooserItems]= chooserItems (onCloseChooser)="closeChooser()" (onSelectItem)="onSelectChooserItem($event)"></app-chooser-modal>
 

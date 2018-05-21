@@ -17,9 +17,9 @@
       <file leaf-file-name="chooser-modal.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/choser-modal/chooser-modal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="0" column="62" lean-forward="false" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
-              <caret line="2" column="85" lean-forward="false" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
+            <state relative-caret-position="0">
+              <caret line="2" column="86" lean-forward="false" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
+              <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
               <folding>
                 <element signature="n#style#0;n#AbsoluteLayout#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#WrapLayout#0;n#AbsoluteLayout#1;n#!!top" expanded="true" />
@@ -32,25 +32,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chooser-modal.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="chooser-modal.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/choser-modal/chooser-modal.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
-                <element signature="e#0#111#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chooser.service.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/services/chooser.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#120#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,8 +47,8 @@
       <file leaf-file-name="items.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/items.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="77" lean-forward="false" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#Image#0;n#!!top" expanded="true" />
               </folding>
@@ -71,8 +59,8 @@
       <file leaf-file-name="items.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/items.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="159">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#1#87#0" expanded="true" />
               </folding>
@@ -110,6 +98,9 @@
       <find>fileSystemModule</find>
       <find>imageSourceModule</find>
       <find>getImageFromIntent</find>
+      <find>cons</find>
+      <find>consol</find>
+      <find>isVisible</find>
       <find>showChooser</find>
     </findStrings>
   </component>
@@ -123,11 +114,11 @@
         <option value="$PROJECT_DIR$/app/components/choser-modal/chooser-modal.js" />
         <option value="$PROJECT_DIR$/app/app.module.ts" />
         <option value="$PROJECT_DIR$/app/App_Resources/Android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/services/chooser.service.ts" />
+        <option value="$PROJECT_DIR$/app/components/items.component.ts" />
         <option value="$PROJECT_DIR$/app/components/choser-modal/chooser-modal.html" />
         <option value="$PROJECT_DIR$/app/components/items.component.html" />
-        <option value="$PROJECT_DIR$/app/components/items.component.ts" />
         <option value="$PROJECT_DIR$/app/components/choser-modal/chooser-modal.ts" />
-        <option value="$PROJECT_DIR$/app/services/chooser.service.ts" />
       </list>
     </option>
   </component>
@@ -244,12 +235,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526511713034</updated>
       <workItem from="1526511714984" duration="56139000" />
-      <workItem from="1526841012707" duration="56078000" />
+      <workItem from="1526841012707" duration="60280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112217000" />
+    <option name="totallyTimeSpent" value="116419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="178" y="37" width="1151" height="731" extended-state="0" />
@@ -305,7 +296,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
-            <element signature="e#0#111#0" expanded="true" />
+            <element signature="e#0#120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -404,11 +395,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/chooser.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1269">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/choser-modal/chooser-modal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="0" column="62" lean-forward="false" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="62" />
-          <caret line="2" column="85" lean-forward="false" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
+        <state relative-caret-position="0">
+          <caret line="2" column="86" lean-forward="false" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
+          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#AbsoluteLayout#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#WrapLayout#0;n#AbsoluteLayout#1;n#!!top" expanded="true" />
@@ -422,8 +423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/items.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="77" lean-forward="false" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#Image#0;n#!!top" expanded="true" />
           </folding>
@@ -432,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/items.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="159">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#1#87#0" expanded="true" />
           </folding>
@@ -442,20 +443,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/choser-modal/chooser-modal.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#0#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/chooser.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#120#0" expanded="true" />
           </folding>
         </state>
       </provider>

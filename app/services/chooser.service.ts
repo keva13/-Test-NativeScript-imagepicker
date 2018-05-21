@@ -32,8 +32,6 @@ export class ChooserService{
 
         intentList = this.addIntentsToList(context, intentList, gallery);
         intentList = this.addIntentsToList(context, intentList, camera);
-        console.log(intentList.length);
-        console.log(intentList[0].icon);
 
 
     }
@@ -69,19 +67,14 @@ export class ChooserService{
     }
 
     onResult(args): Promise<any> {
-        console.log('point0');
         return new Promise((resolve, reject) => {
 
             let requestCode = args.requestCode;
             let resultCode = args.resultCode;
             let data = args.intent;
             if (requestCode === RESULT_CODE_PICKER_IMAGES) {
-                console.log('point1')
                 if (resultCode === android.app.Activity.RESULT_OK) {
-                    console.log('point2')
-                    console.log(args.intent)
                     let path = android.os.Environment.getExternalStoragePublicDirectory(android.os.Environment.DIRECTORY_PICTURES).getAbsolutePath().toString() + "/Test.jpg";
-                    console.log(this.currentIntent)
                     if (this.currentIntent.length && this.currentIntent.indexOf('camera') === -1) {
                         imageSourceModule.fromFile(this._calculateFileUri(data.getData())).saveToFile(path, "jpg", 100);
                     }
@@ -92,13 +85,11 @@ export class ChooserService{
                         return;
                     }
                     let uri = data.getExtras().getParcelable("data")
-                    console.log('getExtras')
 
                     // let selectedAsset = new imageAssetModule.ImageAsset(this._calculateFileUri(uri));
                     // application.android.off(application.AndroidApplication.activityResultEvent, this.onResult);
 
                     resolve(imageSourceModule.fromNativeSource(uri).toBase64String("jpg"))
-                    // console.log();
                     // console.log(imageSourceModule.fromFile(this._calculateFileUri(uri)).toBase64String("jpg"));
                     application.android.off(application.AndroidApplication.activityResultEvent)
                     }
@@ -127,7 +118,6 @@ export class ChooserService{
         if (isKitKat && DocumentsContract.isDocumentUri(application.android.context, uri)) {
             let docId, id, type;
             let contentUri = null;
-            // ExternalStorageProvider
             if (this.isExternalStorageDocument(uri)) {
                 docId = DocumentsContract.getDocumentId(uri);
                 id = docId.split(":")[1];

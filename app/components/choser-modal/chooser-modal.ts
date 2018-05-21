@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, Output, ViewChild, IterableDiffers } from "@angular/core";
+import {Component, ElementRef, EventEmitter, Input, Output, ViewChild, IterableDiffers, OnChanges} from "@angular/core";
 import {AbsoluteLayout} from "tns-core-modules/ui/layouts/absolute-layout";
 import { screen } from "tns-core-modules/platform";
 import {StackLayout} from "tns-core-modules/ui/layouts/stack-layout";
@@ -23,12 +23,10 @@ export class ChooserComponent {
     iterableDiffer;
     constructor(private _iterableDiffers: IterableDiffers) {
         this.iterableDiffer = this._iterableDiffers.find([]).create(null);
-        application.android.on(AndroidApplication.activityBackPressedEvent, (data: AndroidActivityBackPressedEventData) => {
+        application.android.on(AndroidApplication.activityBackPressedEvent, (data: any) => {
             if (this.isVisible) {
                 data.cancel = true;
             }
-            console.log(this.isVisible)
-            this.CloseChooser();
         });
     }
 
