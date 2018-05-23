@@ -23,11 +23,11 @@ export class ChooserComponent {
     iterableDiffer;
     constructor(private _iterableDiffers: IterableDiffers) {
         this.iterableDiffer = this._iterableDiffers.find([]).create(null);
-        application.android.on(AndroidApplication.activityBackPressedEvent, (data: any) => {
-            if (this.isVisible) {
-                data.cancel = true;
-            }
-        });
+        // application.android.on(AndroidApplication.activityBackPressedEvent, (data: any) => {
+        //     if (this.isVisible) {
+        //         data.cancel = true;
+        //     }
+        // });
     }
 
     ngDoCheck() {

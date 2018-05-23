@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.nativescript.testFiles"  
+    applicationId = "org.nativescript.imagepicker"  
   }  
   aaptOptions {  
     additionalParameters "--no-version-vectors"  

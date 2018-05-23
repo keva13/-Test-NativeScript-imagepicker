@@ -4,9 +4,9 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.testFiles",
+    "id": "org.nativescript.imagepicker",
     "tns-android": {
-      "version": "4.0.1"
+      "version": "3.4.2"
     }
   },
   "dependencies": {
@@ -19,12 +19,11 @@
     "@angular/platform-browser": "~5.2.0",
     "@angular/platform-browser-dynamic": "~5.2.0",
     "@angular/router": "~5.2.0",
-    "nativescript-angular": "~5.3.0",
-    "nativescript-imagepicker": "^6.0.1",
+    "nativescript-angular": "~5.2.0",
     "nativescript-theme-core": "~1.0.4",
     "reflect-metadata": "~0.1.8",
     "rxjs": "~5.5.2",
-    "tns-core-modules": "~4.0.0",
+    "tns-core-modules": "^3.4.1",
     "zone.js": "~0.8.2"
   },
   "devDependencies": {
@@ -32,7 +31,7 @@
     "babel-types": "6.26.0",
     "babylon": "6.18.0",
     "lazy": "1.0.11",
-    "nativescript-dev-typescript": "~0.7.0",
-    "typescript": "~2.7.2"
+    "nativescript-dev-typescript": "~0.6.0",
+    "typescript": "~2.6.2"
   }
 }
